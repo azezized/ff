@@ -1,0 +1,14 @@
+<body>
+  <div class="container">
+    <h1>Bienvenue dans le monde de Kirby</h1>
+
+    <div
+      *ngFor="let item of photos"
+      class="photo-text"
+      [ngClass]="{ 'flex-reverse': photos.indexOf(item) % 2 !== 0 }"
+    >
+      <img [src]="item.url" alt="Kirby" />
+      <p>{{ item.title }}</p>
+    </div>
+  </div>
+</body>

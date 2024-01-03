@@ -1,0 +1,36 @@
+h1 {
+  font-size: 5em;
+  font-family: "Parisienne", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Réduire la marge du bas entre les éléments .photo-text */
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover; /* Ajuste l'image en conservant son ratio tout en couvrant complètement le conteneur */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body {
+  background-color: #ffc0cb; /* Code couleur rose */
+  margin: 0; /* Supprimer la marge par défaut du corps */
+  padding: 20px; /* Ajouter un espacement autour du contenu */
+}
