@@ -34,3 +34,20 @@ body {
   margin: 0; /* Supprimer la marge par défaut du corps */
   padding: 20px; /* Ajouter un espacement autour du contenu */
 }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3em; /* Reduire la taille du titre h1 pour les petits écrans */
+  }
+
+  .photo-text {
+    flex-direction: column; /* Changer la direction de la flexbox à colonne pour les petits écrans */
+  }
+
+  img {
+    width: 100%; /* Utiliser la largeur complète pour les images sur les petits écrans */
+    height: auto; /* Ajuster automatiquement la hauteur pour conserver le ratio */
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
